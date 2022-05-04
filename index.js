@@ -67,8 +67,47 @@
 // let b=a.split(" ").filter(val=>val.length === 2).join(" & ");
 // console.log(b);
 
-let a = [[name="himanshu",age=21],[name="lamda",age=10]];
-let b = a.filter(val=>val.length==3);
-console.log(a);
+// let a = [[name="himanshu",age=21],[name="lamda",age=10]];
+// let b = a.filter(val=>val.length==3);
+// console.log(a);
+
+// let a=['a','b','c','d'];
+// let b=0;
+// a.forEach((ele,i)=>{
+//     b+=1;
+//     //b=b+1;
+// });
+// console.log(b)
+
+function setPrint(params) {
+    setTimeout(() => {
+        console.log("hi buddy");
+        }, 3000);
+}
+
+function onGetInput(e) {
+    const data = e.target.value;
+    console.log(data);
+}
+// function localsave() {
+//     localStorage.setItem("Surename","himanshu");
+//     alert("your data is in local storage");
+// }
+function sessionsave() {
+    sessionStorage.setItem("hello","jain");
+    sessionStorage.onGetInput(e);
+}
+
+function localsave() {
+    localStorage.getItem("abc");
+    localStorage.removeItem("abc");
+    localStorage.getItem("helo");
+}
+function localsavechange(e) {
+    var c=e.target.value;
+    localStorage.setItem("name",c);
+    if(localStorage.value("name"))
+    console.log("hi my name is",c);
+}
 
 
