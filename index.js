@@ -110,4 +110,22 @@ function localsavechange(e) {
     console.log("hi my name is",c);
 }
 
+const{fname,lname}={fname:"himanshu",lname:"jain"}
+console.log(fname);
+console.log(lname);
+
+const aa=[34,5];
+const bb=[10,14,11];
+const cc=[aa,bb];
+const dd=[...aa,...bb];
+console.log(cc);
+console.log(dd);
+
+const a=[1,0,3,5];
+let [b,d,...e]=[1,3,6,8,9];
+console.log(b);
+console.log(d);
+console.log(e);
+console.log(a);
+
 
